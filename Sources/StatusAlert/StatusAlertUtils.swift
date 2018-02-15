@@ -21,20 +21,14 @@ import UIKit
         /// - Note: Do not change to save system look
         @objc public var tintColor: UIColor = UIColor.darkGray
         
+        // - Note: Added by me - Leonardo
+        @objc public var titleColor: UIColor = UIColor.darkGray
+        @objc public var messageColor: UIColor = UIColor.darkGray
+        
         /// Used if device does not support blur or if `Reduce Transparency` toggle
         /// in `General->Accessibility->Increase Contrast` is on
         /// - Note: Do not change to save system look
         @objc public var backgroundColor: UIColor = UIColor.groupTableViewBackground
-        
-        static func copyCommon() -> Appearance {
-            let common = Appearance.common
-            let copy = Appearance()
-            copy.titleFont          = common.titleFont
-            copy.messageFont        = common.messageFont
-            copy.tintColor          = common.tintColor
-            copy.backgroundColor    = common.backgroundColor
-            return copy
-        }
     }
     
     @objc(StatusAlertVerticalPosition)
@@ -76,3 +70,4 @@ import UIKit
     private let UIFontWeightSemibold = UIFont.Weight.semibold
     private let UIFontWeightRegular = UIFont.Weight.regular
 #endif
+
