@@ -372,11 +372,11 @@ import UIKit
             && (title != nil || message != nil) {
             contentView
                 .heightAnchor
-                .constraint(greaterThanOrEqualToConstant: SizesAndDistances.minimumAlertHeight)
+                .constraint(greaterThanOrEqualToConstant: appearance.minimumAlertHeight)
                 .isActive = true
             contentView
                 .widthAnchor
-                .constraint(equalToConstant: SizesAndDistances.defaultAlertWidth)
+                .constraint(equalToConstant: appearance.defaultAlertWidth)
                 .isActive = true
             stackView
                 .topAnchor
@@ -392,7 +392,7 @@ import UIKit
             if image == nil {
                 contentView
                     .widthAnchor
-                    .constraint(equalToConstant: SizesAndDistances.defaultAlertWidth)
+                    .constraint(equalToConstant: appearance.defaultAlertWidth)
                     .isActive = true
             }
             stackView
@@ -619,3 +619,4 @@ import UIKit
     private let NSKernAttributeName = NSAttributedStringKey.kern
     private let NSParagraphStyleAttributeName = NSAttributedStringKey.paragraphStyle
 #endif
+
