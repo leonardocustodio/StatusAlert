@@ -26,6 +26,7 @@ import UIKit
         @objc public var messageColor: UIColor = UIColor.darkGray
         @objc public var defaultAlertWidth: CGFloat = 258
         @objc public var minimumAlertHeight: CGFloat = 240
+        @objc public var defaultImageWidth: CGFloat = 90
         
         /// Used if device does not support blur or if `Reduce Transparency` toggle
         /// in `General->Accessibility->Increase Contrast` is on
@@ -52,8 +53,6 @@ import UIKit
         
         static let defaultTopOffset: CGFloat = 32
         static let defaultBottomOffset: CGFloat = 32
-        
-        static let defaultImageWidth: CGFloat = 90
         
         static let minimumStackViewTopSpace: CGFloat = 44
         static let minimumStackViewBottomSpace: CGFloat = 24

@@ -467,7 +467,7 @@ import UIKit
             .isActive = true
         imageView
             .widthAnchor
-            .constraint(equalToConstant: SizesAndDistances.defaultImageWidth)
+            .constraint(equalToConstant: appearance.defaultImageWidth)
             .isActive = true
         
         return imageView
@@ -619,4 +619,3 @@ import UIKit
     private let NSKernAttributeName = NSAttributedStringKey.kern
     private let NSParagraphStyleAttributeName = NSAttributedStringKey.paragraphStyle
 #endif
-
